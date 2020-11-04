@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+    <meta charset="UTF-8">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 50px;
+        color: #f00;
+    }
+</style>
+
+<body>
+        
+    <script>
+        var i = confirm('你女人吗?');
+        while (!i) {
+            alert('不,你是!');
+            i = confirm('你是女人吗?');
+        }
+        document.body.innerHTML = "你承认了 你是女人了吧";
+    </script>
+</body>
+
+</html>

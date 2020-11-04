@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [10, 3, 7, 24, 8]
+        var minIndex = 0
+        for (var j = 1; j < arr.length; j++) {
+            if (arr[minIndex] > arr[j]) {
+                minIndex = j
+            }
+        }
+
+        var temp = arr[0]
+        arr[0] = arr[minIndex]
+        arr[minIndex] = temp
+
+        console.log(arr);
+    </script>
+</body>
+
+</html>

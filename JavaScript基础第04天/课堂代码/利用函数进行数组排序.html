@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = [2, 5, 85, 8, 14, 26, 54, 12]
+        var arr2 = [6, 82, 45, 63, 12, 7, 26, 3]
+        function fuc(ary) {
+            for (var i = 0; i < ary.length - 1; i++) {
+                for (var j = 0; j < ary.length - 1 - i; j++) {
+                    if (ary[j] > ary[j + 1]) {
+                        var temp = ary[j]
+                        ary[j] = ary[j + 1]
+                        ary[j + 1] = temp
+                    }
+                }
+            }
+            console.log(ary);
+        }
+        fuc(arr1)
+        fuc(arr2)
+    </script>
+</body>
+
+</html>

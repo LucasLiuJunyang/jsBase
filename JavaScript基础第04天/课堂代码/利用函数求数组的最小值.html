@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getMin(arr) {
+            var min = arr[0]
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i]
+                }
+            }
+            return min
+        }
+        getMin([6, 2, 7, 65, 14])
+        console.log(getMin([6, 2, 7, 65, 14]));
+        console.log(getMin([126, 21, 7, 65, 14]));
+
+    </script>
+</body>
+
+</html>

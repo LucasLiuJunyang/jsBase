@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var wname = '张三';
+        var age = 22;
+        // 先声明一个第三方变量
+        var tel;
+        // 把变量2的值给第三方变量
+        tel = age;
+        // 把变量1的值给变量2
+        age = wname;
+        // 把第三方变量的值给变量1
+        wname = tel;
+        console.log(wname);
+        console.log(age);
+
+    </script>
+</body>
+
+</html>

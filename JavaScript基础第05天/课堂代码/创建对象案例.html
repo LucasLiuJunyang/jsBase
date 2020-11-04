@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Hero(n, t, b,) {
+            this.name = n
+            this.type = t
+            this.blood = b
+            this.attack = function (attack) {
+                console.log(`${this.name}是属于${attack}类型的英雄`);
+            }
+        }
+        var hy = new Hero('后羿', '远程', 100)
+        hy.attack('远程')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mymath = {
+            max: function () {
+                var index = arguments[0]
+                for (var i = 1; i < arguments.length; i++) {
+                    if (index < arguments[i]) {
+                        index = arguments[i]
+                    }
+                }
+                return index
+            }
+        }
+        console.log(mymath.max(10, 20, 30));
+    </script>
+</body>
+
+</html>

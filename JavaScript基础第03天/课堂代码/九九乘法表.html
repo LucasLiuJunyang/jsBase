@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 700px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+
+        td {
+            border: 1px solid #000;
+            text-align: center;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 一列九行 -->
+    <!-- <script>
+        var str = '<table>'
+        for (var i = 1; i <= 9; i++) {
+            str += '<tr><td>&nbsp;</td></tr>'
+        }
+        str += '</table>'
+        document.write(str)
+    </script> -->
+
+    <!-- 一行九列 -->
+    <!-- <script>
+        var str = '<table>'
+        str += '<tr>'
+        for (var i = 1; i <= 9; i++) {
+            str += '<td>&nbsp;</td>'
+        }
+        str += '</tr>'
+        str += '</table>'
+        document.write(str)
+    </script> -->
+
+    <!-- 九九乘法表 -->
+    <script>
+        var str = '<table>'
+        for (var i = 1; i <= 9; i++) {
+            str += '<tr>'
+            for (var j = 1; j <= i; j++) {
+                str += `<td>${j}&times${i}=${j * i}</td>`
+            }
+            str += '</tr>'
+        }
+
+        str += '</table>'
+        document.write(str)
+    </script>
+</body>
+
+</html>
